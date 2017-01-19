@@ -32,14 +32,14 @@ var geojson = {
         {
             "type": "Feature",
             "properties": {
-                "message": "Foo",
+                "message": "Abshikith Kujur",
                 "iconSize": [60, 60]
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -66.324462890625,
-                    -16.024695711685304
+                   85.309,
+                    23.378
                 ]
             }
         }
@@ -50,8 +50,8 @@ var geojson = {
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v9',
-    center: [-65.017, -16.457],
-    zoom: 5
+    center: [85, 23],
+    zoom: 6
 });
 
 // add markers to map
@@ -59,7 +59,7 @@ geojson.features.forEach(function(marker) {
     // create a DOM element for the marker
     var el = document.createElement('div');
     el.className = 'marker';
-    el.style.backgroundImage = 'url(https://placekitten.com/g/' + marker.properties.iconSize.join('/') + '/)';
+    el.style.backgroundImage = 'url(http://resultstrack.in/wp-content/uploads/2016/12/realistic_pencil_sketch_photo_effect-2.jpg)';
     el.style.width = marker.properties.iconSize[0] + 'px';
     el.style.height = marker.properties.iconSize[1] + 'px';
 
